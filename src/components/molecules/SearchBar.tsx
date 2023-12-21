@@ -1,4 +1,3 @@
-// Importa useState y useEffect
 import React, { useState, useEffect } from 'react';
 import { FaSearch } from 'react-icons/fa';
 
@@ -7,16 +6,13 @@ const SearchBar = ({ onSearch }) => {
   const [searchResults, setSearchResults] = useState([]);
   const [searching, setSearching] = useState(false);
 
-  // Actualiza la función handleSearch para llamar a la función onSearch
   const handleSearch = async () => {
     if (!searchTerm.trim()) {
-      // Evitar búsqueda si el término está vacío o contiene solo espacios en blanco
       return;
     }
 
     setSearching(true);
 
-    // Realizar la solicitud de búsqueda a la API de Pexels
     const apiKey = import.meta.env.VITE_PEXEL_API;
     const apiUrl = `https://api.pexels.com/v1/search?query=${encodeURIComponent(searchTerm)}&per_page=10`;
 
@@ -34,7 +30,6 @@ const SearchBar = ({ onSearch }) => {
       const data = await response.json();
       setSearchResults(data.photos);
 
-      // Llama a la función onSearch con los resultados
       onSearch(data.photos);
     } catch (error) {
       console.error('Error fetching search results:', error.message);

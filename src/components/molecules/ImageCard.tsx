@@ -1,4 +1,3 @@
-// ImageCard.tsx
 import React, { useState, useEffect } from 'react';
 
 interface ImageCardProps {
@@ -14,7 +13,6 @@ const ImageCard: React.FC<ImageCardProps> = ({ image, onClick }) => {
   };
 
   useEffect(() => {
-    // Reset imageLoaded state when a new image is received
     setImageLoaded(false);
   }, [image]);
 

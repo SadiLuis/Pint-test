@@ -1,4 +1,3 @@
-// ImageDetails.tsx
 import React from 'react';
 
 interface ImageDetailsProps {
@@ -10,7 +9,6 @@ const ImageDetails: React.FC<ImageDetailsProps> = ({ image, onClose }) => {
   return (
     <div>
       <h2>{image.title}</h2>
-      {/* Agrega más detalles según tus necesidades */}
       <img src={image.src} alt={image.alt} style={{ maxWidth: '100%' }} />
       <button onClick={onClose}>Cerrar</button>
     </div>

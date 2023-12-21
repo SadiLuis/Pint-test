@@ -50,7 +50,7 @@ const Form = () => {
           <p className="text-lg text-gray-500 mb-2">
             or use your email for registration:
           </p>
-          {/* Nuevo input para el nombre */}
+          
           <Inputs
             type="text"
             name="name"
@@ -58,7 +58,7 @@ const Form = () => {
             value={name}
             onChange={(e: { target: { value: SetStateAction<string>; }; }) => setName(e.target.value)}
           />
-          {/* Resto del formulario */}
+          
           <Inputs
             type="email"
             name="email"

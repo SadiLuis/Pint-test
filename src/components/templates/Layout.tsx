@@ -5,7 +5,6 @@ const Layout = () => {
   return (
     <div className="flex flex-col items-center">
         <Form/>
-        
     </div>
   )
 }

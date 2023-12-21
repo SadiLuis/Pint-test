@@ -48,8 +48,8 @@ const CreateImageForm: React.FC<CreateImageFormProps> = ({ onSubmit }) => {
       const docRef = await addDoc(collection(firestore, 'images'), {
         userId: user.uid,
         imageUrl: imageUrl,
-        title: title.trim(), // Agrega el título
-        description: description.trim(), // Agrega la descripción
+        title: title.trim(), 
+        description: description.trim(), 
         timestamp: serverTimestamp(),
       });
 

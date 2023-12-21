@@ -1,4 +1,3 @@
-// AuthProvider.tsx
 import { createContext, useContext, useEffect, useState } from "react";
 import { auth } from "../services/firebase";
 import { 
@@ -18,7 +17,7 @@ interface AuthContextProps {
   signInWithGoogle: () => Promise<void>;
   user: Auth['currentUser'] | null;
   firebaseAccessToken: string | null;
-  imgurAccessToken: string | null; // Nuevo campo para el token de Imgur
+  imgurAccessToken: string | null; 
 }
 
 const AuthContext = createContext<AuthContextProps | undefined>(undefined);

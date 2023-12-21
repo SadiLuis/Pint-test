@@ -1,4 +1,3 @@
-// ImageGallery.tsx
 import React, { useEffect, useState } from 'react';
 import ImageCard from '../molecules/ImageCard';
 import { Masonry } from '@tx666/masonry';
