@@ -1,30 +1,33 @@
-# React + TypeScript + Vite
+# Proyecto React.js - Typescript inspirado en ciertos puntos visualmente en Pinterest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+#Logrado
 
-Currently, two official plugins are available:
+#Autenticación y Registro:
+Página de registro y acceso implementada.
+Conexión con Firebase Authentication para acceso con cuenta de Google y registro por correo electrónico.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+#Funcionalidades Post-Registro:
+Visualización de imágenes según el mockup adjunto.
+Implementación de infinite scrolling.
+Consumo de la API de Pexels para mostrar imágenes.
+Barra de búsqueda para imágenes por etiquetas (tags).
 
-## Expanding the ESLint configuration
+#Sección de Imágenes Colaborativas:
+Usuarios pueden subir sus propias imágenes, almacenadas en Firestore.
+Actualización en tiempo real de las imágenes subidas por otros usuarios.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Opciones Adicionales:
+Integración de TypeScript para el desarrollo de la aplicación.
 
-- Configure the top-level `parserOptions` property like this:
+#Se Puede Mejorar
+Mejorar la implementación del infinite scrolling.
+Refinar la búsqueda y la presentación de resultados de la API de Pexels.
+Mejorar la actualización en tiempo real de las imágenes colaborativas.
+Implementar smooth scrolling y loaders para una experiencia de usuario más suave.
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+# Faltante
+Implementación de smooth scrolling.
+Integración de loaders (indicadores de carga).
+Desarrollo de pruebas unitarias.
+Uso de lazy loading para optimizar la carga de imágenes.
+Visualización en pantalla completa al hacer clic en una imagen.
